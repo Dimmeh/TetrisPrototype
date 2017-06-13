@@ -1,0 +1,241 @@
+@font-face {
+    font-family: pixel;
+    src: url(../font/slkscr.ttf);
+}
+
+html, body, background{
+    width: 100%;
+    height: 100%;
+}
+
+body {
+    background-repeat: no-repeat;
+    font-family: Arial, Helvetica, sans-serif;
+    overflow:hidden;
+    margin:0px; padding:0px;
+    font-family: 'Press Start 2P', cursive;
+}
+
+body * {
+    position: absolute;
+    display: block;
+    margin:0px;
+    padding:0px;
+    box-sizing: border-box;
+}
+
+.center{
+    height: 500px;
+    width: 500px;
+    background: rgb(61, 61, 61);
+}
+
+sea{
+    width:100%;
+    height: 50%;
+    background: url("../images/water.gif");
+    position: absolute;
+    bottom:0;
+}
+
+sky {
+    width:100%;
+    height: 50%;
+    top:0;
+    /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#60aff4+0,cef3ff+51 */
+    background: #60aff4; /* Old browsers */
+    background: -moz-linear-gradient(top, #60aff4 0%, #cef3ff 51%); /* FF3.6-15 */
+    background: -webkit-linear-gradient(top, #60aff4 0%,#cef3ff 51%); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to bottom, #60aff4 0%,#cef3ff 51%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#60aff4', endColorstr='#cef3ff',GradientType=0 ); /* IE6-9 */
+}
+
+cloud{
+    width: 156px;
+    height:89px;
+    background: url("../images/cloud.png");
+}
+
+wingull{
+    width:143px;
+    height:24px;
+    background: url("../images/wingull.gif");
+    transform: translate(1360px, 60px);
+}
+
+pelipper{
+    width:101px;
+    height:92px;
+    background: url("../images/pelipper.gif");
+    transform: translate(1340px, 180px);
+}
+
+container {
+    width: 960px;
+    height:600px;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    overflow:hidden;
+}
+
+grid{
+    background: url('../images/grid2.png');
+    height: 600px;
+    width: 600px;
+    position: relative;
+    top: 50%;
+    left: 50%;
+    z-index: 1;
+    transform: translate(-50%,-50%);
+}
+
+score{
+    left: 13%;
+    top: 45%;
+    z-index: 0;
+    transform: translate(-50%, -50%);
+    background: url("../images/pokedex.png");
+    -webkit-background-size:100%;
+    background-size:100%;
+    width: 250px;
+    height: 250px;
+}
+hitbox {
+    border:  2px solid red;
+    width: 30px; height: 30px;
+}
+
+h2#pokemonName {
+    transform: translate(-50%, -50%) rotateY(180deg);
+    font-size: 12px;
+    top: 27%;
+}
+
+pokedex{
+    left: 87%;
+    top: 45%;
+    width: 250px;
+    z-index: 0;
+    transform: translate(-50%, -50%) rotateY(180deg);
+    background: url("../images/pokedex.png");
+    height: 250px;
+    background-size: 100%;
+}
+
+#score, score h2, pokedex h2, pokedex span{
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: block;
+}
+
+#score, score h2, pokedex h2{
+    color: #3b79a8;
+    font-family: pixel;
+}
+
+score h2{
+    top: 27%;
+    font-size: 20px;
+}
+
+#score{
+    top: 70%;
+    font-size: 26px;
+}
+
+#pokemonGif{
+    width: 30px;
+    height: 41px;
+    background-repeat: no-repeat;
+    top: 170px;
+    transform: translate(-50%, -50%) rotateY(180deg);
+}
+
+pokedex .piplup{
+    background :url('../images/piplup.gif ');
+    background-size: 100%;
+}
+
+pokedex .prinplup{
+    background: url('../images/prinplup.gif ');
+    background-size: 100%;
+}
+
+pokedex .empoleon{
+    background :url('../images/empoleon.gif ');
+    background-size: 100%;
+}
+
+containerBlock{
+    position: absolute;
+    display: inline-block;
+    transform: translate(0, 0);
+}
+
+
+containerBlock.container_piplup{
+    height: 60px;
+    width: 60px;
+    background: url("../images/piplup.png");
+}
+
+
+containerBlock.container_prinplup{
+    width:60px;
+    height:120px;
+    background: url("../images/prinplup.png");
+}
+
+
+containerBlock.container_empeleon{
+    width:120px;
+    height:120px;
+    background: url("../images/empeleon.png");
+}
+
+#gameOver {
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,0.4);
+    opacity: 0;
+    display:none;
+    transition: opacity 1s;
+}
+
+#gameOver.active{
+    opacity:1;
+}
+
+.center img {
+    top: 40%;
+}
+
+gameOver h1,
+gameOver h2,
+gameOver span{
+    color: white;
+}
+
+button#startOver {
+    left: 40%;
+    background: lightblue;
+    top: 25%;
+    border: none;
+    padding: 3%;
+}
+
+gameOver h2 {
+    top: 15%;
+    left: 30%;
+}
+
+span#finalScore {
+    top: 0;
+    left: 104%;
+}
+
+gameOver h1 {
+    left: 17%;
+    top: 5%;
+}

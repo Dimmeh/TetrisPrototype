@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Pokemon Tetris</title>
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+</head>
+<body>
+<background>
+    <sky>
+        <wingull></wingull>
+        <pelipper></pelipper>
+    </sky>
+    <sea></sea>
+    <container id="container">
+        <score>
+            <h2>Score</h2>
+            <span id="score"></span>
+        </score>
+        <grid id="grid"></grid>
+        <pokedex>
+            <h2 id="pokemonName"></h2>
+            <span id="pokemonGif"></span>
+        </pokedex>
+    </container>
+</background>
+<gameover id="gameOver">
+    <div class="center" id="gameOverInfo">
+        <h1>Game Over! You lose.</h1>
+        <h2>Final score: <span id="finalScore"></span></h2>
+        <button onclick="window.location.reload()" id="startOver">Try Again!</button>
+        <img src="images/gameover.gif" alt="">
+    </div>
+</gameover>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.19.1/TweenMax.min.js"></script>
+<script src='js/main.js'></script>
+</body>
+</html>
